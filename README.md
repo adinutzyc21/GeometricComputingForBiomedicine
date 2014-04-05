@@ -16,3 +16,6 @@ To get it to work:
 The first icon opens an image file (example files in test_data) and the second one runs the algorithm on the file and calculates the femur angle.
 You can zoom in and out on the image, as well as rotate it 90 degrees clockwise or counterclockwise. 
 The last icon toggles the original ImageJ interface on and off.
+
+
+Please note that the code for all the other items in the ActionBar Plugin is not mine. I am solely providing the whole code for ease of use. Original author: http://rsb.info.nih.gov/ij/plugins/action-bar.html

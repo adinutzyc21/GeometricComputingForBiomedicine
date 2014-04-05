@@ -1,0 +1,63 @@
+// Action Bar description file : FemurAngle
+run("Action Bar","/plugins/ActionBar/_FemurAngle.txt");
+exit();
+//<onTop>
+<line>
+<button>
+	label=Load Image File
+	icon=_FemurAngle/open.png
+	arg=<macro>
+	path = File.openDialog("Click on any image");
+	open(path);
+	//run("Brightness/Contrast...");
+	setMinAndMax(0, 0);
+	run("Apply LUT");
+	run("Properties...", "channels=1 slices=1 frames=1 unit=pixel pixel_width=1 pixel_height=1 voxel_depth=1 frame=[0 sec] origin=0,0");
+	run("RGB Color");
+	//run("Duplicate...","title=Femur Angle");
+</macro>
+
+<button>
+	label=Calculate Angle
+	icon=_FemurAngle/circ2.png
+	arg=<macro>
+	dir = getDirectory("plugins") +"/ActionBar/"; 
+	run("Compile and Run...", "compile=["+dir+"Femur_Angle.java]");
+</macro>
+
+<separator>
+<button>
+label=Zoom In
+icon=_FemurAngle/zoomin.png
+arg=<macro>
+run("In [+]");
+</macro>
+
+<button>
+label=Zoom Out
+icon=_FemurAngle/zoomout.png
+arg=<macro>
+run("Out [-]");
+</macro>
+
+<button>
+label=Rotate 90 Degrees Left
+icon=_FemurAngle/rotleft.png
+arg=<macro>
+run("Rotate 90 Degrees Left");
+</macro>
+
+<button>
+label=Rotate 90 Degrees Right
+icon=_FemurAngle/rotright.png
+arg=<macro>
+run("Rotate 90 Degrees Right");
+</macro>
+
+<separator>
+<button>
+label=Toggle IJ
+icon=noicon
+arg=<hide>
+
+</line>

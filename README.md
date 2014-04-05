@@ -7,7 +7,7 @@ As the final project for the class I implemented a plug-in for ImageJ that reads
 
 The project is described on my website here: http://research.engineering.wustl.edu/~adina.stoica/projects_wustl_geocomp.html
 
-I have a final project writeup here also: file:///Users/adinutzyc21/Google%20Drive/webpage/extras/proj/geometric_computing/femurhead.pdf
+You can also read the final project writeup here: http://research.engineering.wustl.edu/~adina.stoica/extras/proj/geometric_computing/femurhead.pdf
 
 To get it to work:
 1. Download ImageJ from http://imagej.nih.gov/ij/download.html
